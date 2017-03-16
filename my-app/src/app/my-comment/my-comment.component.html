@@ -1,0 +1,7 @@
+<table class="table table-striped">
+	<tr *ngFor="let comment of comments;" *ngIf="row<4">
+		<td>{{comment.id}}</td>
+		<td>{{comment.text}}</td>
+		<td>{{comment.mark}}</td>
+	</tr>
+</table>
