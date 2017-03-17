@@ -1,8 +1,8 @@
 <table class="table table-striped">
-	<tr *ngFor="let comment of Comments | slice : 0: rows; let i = index">
+	<tr *ngFor="let comment of Comments | slice : 0: rows; let i = index" id="{{i}}">
 		<td>{{comment.id}}</td>
 		<td>{{comment.text}}</td>
 		<td>{{comment.mark}}</td>
-		<td><button (click)="delete_row()">Delete</button></td>
+		<td><button (click)="delete_row(i)">Delete</button></td>
 	</tr>
 </table>
